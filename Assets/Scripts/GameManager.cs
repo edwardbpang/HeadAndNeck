@@ -28,24 +28,38 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(1); //loading scene 1 by index
     }
 
-    /*public void OnNextClick()
+    public void LoadSceneByName(string sceneName)
     {
-        Debug.Log ("Scene " + (nextSceneIndex + 1) + " of " + SceneManager.sceneCountInBuildSettings);
-        nextSceneIndex += 1;
-        if (nextSceneIndex > sceneCount - 1)
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void LoadSceneByIndex(int sceneIndex)
+    {
+        SceneManager.LoadScene(sceneIndex);
+    }
+
+    public void OnNextClick()
+    {
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+
+        if (currentScene < SceneManager.sceneCountInBuildSettings - 1)
         {
-            nextSceneIndex = 0;
+            SceneManager.LoadScene(currentScene + 1);
         }
-        SceneManager.LoadScene(nextSceneIndex);
     }
 
     public void OnBackClick()
     {
-        nextSceneIndex -= 1;
-        if (nextSceneIndex < 0)
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+
+        if (currentScene > 0)
         {
-            nextSceneIndex = sceneCount - 1;
+            SceneManager.LoadScene(currentScene - 1);
         }
-        SceneManager.LoadScene(nextSceneIndex);
-    }*/
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

@@ -120,7 +120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 995506327746898105}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 412447165485753731}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OnNextClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Scene 4 Stroke
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &52090740696594629
 GameObject:
   m_ObjectHideFlags: 0
@@ -1687,7 +1699,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8723290601888578707}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 412447165485753731}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadSceneByName
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Scene 4 Go Home
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2530387912441698231
 GameObject:
   m_ObjectHideFlags: 0
@@ -2078,7 +2102,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5716838236549216080}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 412447165485753731}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadSceneByName
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Scene 3 Imaging
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2847062865915701365
 GameObject:
   m_ObjectHideFlags: 0
@@ -3285,7 +3321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9160483841735621026}
-  - component: {fileID: 5560544070744168200}
+  - component: {fileID: 412447165485753731}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3313,7 +3349,7 @@ Transform:
   - {fileID: 3867045049874169451}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5560544070744168200
+--- !u!114 &412447165485753731
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
