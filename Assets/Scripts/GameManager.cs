@@ -3,6 +3,31 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance = null;
+    public int nextSceneIndex = 1; //increases scene index to go to the next scene
+    private int sceneCount;
+    
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            Init();
+        }
+
+        DontDestroyOnLoad(this);
+        sceneCount = SceneManager.sceneCountInBuildSettings;
+    }
+
+    void Init()
+    {
+        SceneManager.LoadScene(1); //loading scene 1 by index
+    }
+
     public void LoadSceneByName(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
